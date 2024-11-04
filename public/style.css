@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Verdana;   
+  display: grid;
+  place-items: center;
+  background: radial-gradient(rgb(58, 57, 57),white);
+}
+
+.title {
+  margin: 20px 0px;
+}
+
+.main {
+  border: 8px double rgb(62, 174, 239);
+  border-radius: 24px;
+  overflow: hidden;
+  width: 80%;
+}
+
+.name {
+  display: flex;
+  font-size: 32px;
+  padding: 8px 16px;
+  color: blue;
+  background:lightgreen
+}
+
+.name > span {
+  color: navy;
+}
+
+.name-input {
+  font-size: 24px;
+  font-weight: bold;
+  color: blueviolet;
+  flex-grow: 1;
+  border: none;
+  margin: 0px 12px;
+  outline: none;
+  background:none;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  background:linear-gradient(to top, white 80%, rgb(75, 74, 74));
+  width: 100%;
+  height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.message-left,
+.message-right {
+  list-style: none;
+  padding: 8px 12px;
+  margin: 12px;
+  max-width: 75%;
+  font-size: 18px;
+  word-wrap: break-word;
+}
+
+.message-left {
+  border-radius: 20px 20px 20px 0px;
+  align-self: flex-start;
+  background-color: rgb(135, 130, 130);
+  box-shadow: -2px 2px 4px darkblue;
+  color: black;
+}
+
+.message-right {
+  border-radius: 20px 20px 0px 20px;
+  align-self: flex-end;
+  background-color:black;
+  box-shadow: 2px 2px 4px darkblue;
+  color:rgb(70, 67, 68);
+}
+
+.message-left > p > span,
+.message-right > p > span {
+  display: block;
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.feedback {
+  font-style: italic;
+  font-size: 14px;    
+  text-align: center;
+  background:linear-gradient(to left, white, skyblue, white);  
+}
+
+.message-form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.message-input {
+  flex-grow: 1;
+  height: 48px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  background-color: rgba(215,215,215,1);
+}
+
+.send-button {
+  height: 48px;
+  font-size: 16px;
+  width: 20%;
+  border: none;
+  padding: 0px 20px;
+  outline: none;
+  background-color: rgba(215,215,215,1);
+  cursor: pointer;
+}
+.send-button:hover{
+    background: radial-gradient(white,lightgray);
+}
+
+.v-divider {
+  height: 48px;
+  width: 2px;
+  background-color: lightsalmon;
+}
+
+.clients-total {
+  margin: 20px 0;
+  color: #7e7e7e;
+}
